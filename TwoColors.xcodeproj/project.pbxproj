@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		356C1F1325B855AF003D5A1B /* TwoColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		356C1F1325B855AF003D5A1B /* TwoColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwoColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		356C1F1625B855AF003D5A1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		356C1F1825B855AF003D5A1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		356C1F1A25B855AF003D5A1B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		356C1F0A25B855AF003D5A1B = {
 			isa = PBXGroup;
 			children = (
-				356C1F1525B855AF003D5A1B /* TwoColor */,
+				356C1F1525B855AF003D5A1B /* TwoColors */,
 				356C1F1425B855AF003D5A1B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +48,12 @@
 		356C1F1425B855AF003D5A1B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				356C1F1325B855AF003D5A1B /* TwoColor.app */,
+				356C1F1325B855AF003D5A1B /* TwoColors.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		356C1F1525B855AF003D5A1B /* TwoColor */ = {
+		356C1F1525B855AF003D5A1B /* TwoColors */ = {
 			isa = PBXGroup;
 			children = (
 				356C1F1625B855AF003D5A1B /* AppDelegate.swift */,
@@ -64,15 +64,15 @@
 				356C1F2125B855B0003D5A1B /* LaunchScreen.storyboard */,
 				356C1F2425B855B0003D5A1B /* Info.plist */,
 			);
-			path = TwoColor;
+			path = TwoColors;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		356C1F1225B855AF003D5A1B /* TwoColor */ = {
+		356C1F1225B855AF003D5A1B /* TwoColors */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 356C1F2725B855B0003D5A1B /* Build configuration list for PBXNativeTarget "TwoColor" */;
+			buildConfigurationList = 356C1F2725B855B0003D5A1B /* Build configuration list for PBXNativeTarget "TwoColors" */;
 			buildPhases = (
 				356C1F0F25B855AF003D5A1B /* Sources */,
 				356C1F1025B855AF003D5A1B /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = TwoColor;
+			name = TwoColors;
 			productName = TwoColor;
-			productReference = 356C1F1325B855AF003D5A1B /* TwoColor.app */;
+			productReference = 356C1F1325B855AF003D5A1B /* TwoColors.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +101,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 356C1F0E25B855AF003D5A1B /* Build configuration list for PBXProject "TwoColor" */;
+			buildConfigurationList = 356C1F0E25B855AF003D5A1B /* Build configuration list for PBXProject "TwoColors" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +114,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				356C1F1225B855AF003D5A1B /* TwoColor */,
+				356C1F1225B855AF003D5A1B /* TwoColors */,
 			);
 		};
 /* End PBXProject section */
@@ -288,13 +288,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LT5ZADXQMP;
-				INFOPLIST_FILE = TwoColor/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TwoColors/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dwkang.TwoColor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dwkang.TwoColors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -308,13 +308,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LT5ZADXQMP;
-				INFOPLIST_FILE = TwoColor/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TwoColors/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dwkang.TwoColor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dwkang.TwoColors;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -324,7 +324,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		356C1F0E25B855AF003D5A1B /* Build configuration list for PBXProject "TwoColor" */ = {
+		356C1F0E25B855AF003D5A1B /* Build configuration list for PBXProject "TwoColors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				356C1F2525B855B0003D5A1B /* Debug */,
@@ -333,7 +333,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		356C1F2725B855B0003D5A1B /* Build configuration list for PBXNativeTarget "TwoColor" */ = {
+		356C1F2725B855B0003D5A1B /* Build configuration list for PBXNativeTarget "TwoColors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				356C1F2825B855B0003D5A1B /* Debug */,
