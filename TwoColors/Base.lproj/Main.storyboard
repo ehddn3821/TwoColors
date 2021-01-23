@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
+        <!--Random-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="TwoColor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RandomViewController" customModule="TwoColors" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,16 +20,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="rXA-se-paE">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="BVs-GK-9oz">
-                                        <rect key="frame" x="0.0" y="55.5" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BVs-GK-9oz" id="seJ-82-mGA">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="0bf-Pz-1YK"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="sI0-fm-dh5"/>
@@ -45,7 +35,7 @@
                             <constraint firstItem="rXA-se-paE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dfc-6f-8fd"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="kr8-gT-r3W"/>
+                    <tabBarItem key="tabBarItem" title="Random" id="kr8-gT-r3W"/>
                     <connections>
                         <outlet property="tableView" destination="rXA-se-paE" id="Q4D-fE-zC5"/>
                     </connections>
@@ -73,7 +63,7 @@
             </objects>
             <point key="canvasLocation" x="13" y="424"/>
         </scene>
-        <!--Recomend-->
+        <!--All-->
         <scene sceneID="3Nu-ad-6SL">
             <objects>
                 <viewController id="XMT-Qs-lZQ" sceneMemberID="viewController">
@@ -83,7 +73,7 @@
                         <viewLayoutGuide key="safeArea" id="ONK-fJ-vOt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Recomend" id="xPd-IG-eGb"/>
+                    <tabBarItem key="tabBarItem" title="All" id="xPd-IG-eGb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="132-x4-Cm2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="310" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="TwoColors" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="456" height="310"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="456" height="310"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Headline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjf-rA-qYH">
+                        <rect key="frame" x="20" y="20" width="145" height="35"/>
+                        <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="30"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjm-ot-U5K">
+                        <rect key="frame" x="20" y="85" width="416" height="125"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="125" id="J2o-m6-edd"/>
+                        </constraints>
+                        <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZr-M8-F3y">
+                        <rect key="frame" x="361" y="20" width="75" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="TJx-6d-a4I"/>
+                        </constraints>
+                        <state key="normal" title="Reverse"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4j9-XD-gdv">
+                        <rect key="frame" x="0.0" y="240" width="456" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum is simply dummy text of the printing and typesetting..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTR-qT-XPa">
+                                <rect key="frame" x="20" y="8" width="416" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="LTR-qT-XPa" secondAttribute="trailing" constant="20" symbolic="YES" id="Lw8-lB-IQ8"/>
+                            <constraint firstAttribute="bottom" secondItem="LTR-qT-XPa" secondAttribute="bottom" constant="8" id="cCY-1h-QCx"/>
+                            <constraint firstItem="LTR-qT-XPa" firstAttribute="top" secondItem="4j9-XD-gdv" secondAttribute="top" constant="8" id="tcZ-fd-VCM"/>
+                            <constraint firstItem="LTR-qT-XPa" firstAttribute="leading" secondItem="4j9-XD-gdv" secondAttribute="leading" constant="20" symbolic="YES" id="tgk-Gx-cCA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YZr-M8-F3y" firstAttribute="height" secondItem="cjf-rA-qYH" secondAttribute="height" id="ADD-fR-XgA"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="hjm-ot-U5K" secondAttribute="trailing" id="L6z-iK-cMx"/>
+                    <constraint firstItem="hjm-ot-U5K" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="VGo-tf-7zk"/>
+                    <constraint firstAttribute="bottom" secondItem="4j9-XD-gdv" secondAttribute="bottom" id="VcF-jh-5dJ"/>
+                    <constraint firstItem="hjm-ot-U5K" firstAttribute="top" secondItem="cjf-rA-qYH" secondAttribute="bottom" constant="30" id="W5F-7R-2J8"/>
+                    <constraint firstItem="4j9-XD-gdv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="e6t-sv-i2Q"/>
+                    <constraint firstItem="cjf-rA-qYH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="hhv-XG-OSb"/>
+                    <constraint firstAttribute="trailing" secondItem="YZr-M8-F3y" secondAttribute="trailing" constant="20" symbolic="YES" id="jJ6-tX-Xl3"/>
+                    <constraint firstItem="cjf-rA-qYH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="mfG-bo-BNV"/>
+                    <constraint firstAttribute="trailing" secondItem="4j9-XD-gdv" secondAttribute="trailing" id="ppL-a4-o58"/>
+                    <constraint firstItem="YZr-M8-F3y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" symbolic="YES" id="qFQ-4r-BUu"/>
+                    <constraint firstItem="4j9-XD-gdv" firstAttribute="top" secondItem="hjm-ot-U5K" secondAttribute="bottom" constant="30" id="wSa-Wb-TiW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cellBtn" destination="YZr-M8-F3y" id="7KY-o5-32u"/>
+                <outlet property="cellContent" destination="hjm-ot-U5K" id="Jfa-fv-dJL"/>
+                <outlet property="cellFooter" destination="LTR-qT-XPa" id="rjA-90-h1X"/>
+                <outlet property="cellHeadline" destination="cjf-rA-qYH" id="XYq-U9-O4e"/>
+            </connections>
+            <point key="canvasLocation" x="226.08695652173915" y="72.991071428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
