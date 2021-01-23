@@ -4,21 +4,22 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Random-->
+        <!--Random Colors-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="RandomViewController" customModule="TwoColors" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="rXA-se-paE">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                                 <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="0bf-Pz-1YK"/>
@@ -35,27 +36,29 @@
                             <constraint firstItem="rXA-se-paE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dfc-6f-8fd"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Random" id="kr8-gT-r3W"/>
+                    <navigationItem key="navigationItem" title="Random Colors" id="6xL-qo-4Ds"/>
                     <connections>
                         <outlet property="tableView" destination="rXA-se-paE" id="Q4D-fE-zC5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="923.1884057971015" y="88.392857142857139"/>
+            <point key="canvasLocation" x="1833.3333333333335" y="88.392857142857139"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="gaB-lQ-Es4">
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Tay-Rj-CF4" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hIp-XQ-7Db">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="hIp-XQ-7Db">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.99607843137254903" green="0.90588235294117647" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.062745098039215685" green="0.094117647058823528" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="g2a-Ze-pTi"/>
+                        <segue destination="CZ3-rH-RK2" kind="relationship" relationship="viewControllers" id="g2a-Ze-pTi"/>
                         <segue destination="XMT-Qs-lZQ" kind="relationship" relationship="viewControllers" id="ex2-ro-PjO"/>
                     </connections>
                 </tabBarController>
@@ -73,16 +76,56 @@
                         <viewLayoutGuide key="safeArea" id="ONK-fJ-vOt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="All" id="xPd-IG-eGb"/>
+                    <tabBarItem key="tabBarItem" title="All" id="xPd-IG-eGb">
+                        <imageReference key="image" image="a.square" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="132-x4-Cm2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="923" y="784"/>
         </scene>
+        <!--Random-->
+        <scene sceneID="b9U-QO-xok">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CZ3-rH-RK2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Random" id="kr8-gT-r3W">
+                        <imageReference key="image" image="questionmark.square.dashed.ar" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="hzH-si-V36">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="35"/>
+                            <color key="textShadowColor" systemColor="systemRedColor"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="1" vertical="-1"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="35"/>
+                            <color key="textShadowColor" systemColor="systemRedColor"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="1" vertical="-1"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hBT-B5-mMn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggQ-Ig-jhn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="923.1884057971015" y="88.392857142857139"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="a.square" catalog="system" width="128" height="114"/>
+        <image name="questionmark.square.dashed.ar" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

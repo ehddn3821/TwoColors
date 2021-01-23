@@ -27,23 +27,6 @@ class RandomViewController: UIViewController {
 
 extension RandomViewController: UITableViewDataSource, UITableViewDelegate {
     
-    // 섹션 개수
-//    func numberOfSections(in tableView: UITableView) -> Int {
-//        return 2
-//    }
-    
-    // 섹션 제목
-//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//        switch section {
-//        case 0:
-//            return "[ 맛있는 커피 ]"
-//        case 1:
-//            return "[ Delicious Coffee ]"
-//        default:
-//            return ""
-//        }
-//    }
-    
     // 섹션마다 열의 개수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -56,5 +39,10 @@ extension RandomViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
         
         return cell
+    }
+    
+    // 섹션 헤더 없애기
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return CGFloat.leastNormalMagnitude // 이게 CGFloat 양수 최소값 상수
     }
 }
