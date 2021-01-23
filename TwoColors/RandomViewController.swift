@@ -17,6 +17,7 @@ class RandomViewController: UIViewController {
         self.tableView.dataSource = self
         self.tableView.delegate = self
         
+        // 셀 xib파일 연결
         let nibName = UINib(nibName: "TableViewCell", bundle: nil)
         tableView.register(nibName, forCellReuseIdentifier: "cell")
     }

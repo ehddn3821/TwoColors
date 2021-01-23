@@ -60,15 +60,15 @@
 		356C1F1525B855AF003D5A1B /* TwoColors */ = {
 			isa = PBXGroup;
 			children = (
+				356C1F1F25B855B0003D5A1B /* Assets.xcassets */,
 				356C1F1625B855AF003D5A1B /* AppDelegate.swift */,
 				356C1F1825B855AF003D5A1B /* SceneDelegate.swift */,
-				356C1F1A25B855AF003D5A1B /* RandomViewController.swift */,
 				356C1F1C25B855AF003D5A1B /* Main.storyboard */,
-				356C1F1F25B855B0003D5A1B /* Assets.xcassets */,
 				356C1F2125B855B0003D5A1B /* LaunchScreen.storyboard */,
-				356C1F2425B855B0003D5A1B /* Info.plist */,
+				356C1F1A25B855AF003D5A1B /* RandomViewController.swift */,
 				35AD4A2F25BBF4E1007C718D /* TableViewCell.swift */,
 				35AD4A3025BBF4E1007C718D /* TableViewCell.xib */,
+				356C1F2425B855B0003D5A1B /* Info.plist */,
 			);
 			path = TwoColors;
 			sourceTree = "<group>";
