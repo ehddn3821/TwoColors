@@ -72,6 +72,7 @@ extension RandomViewController: UITableViewDataSource, UITableViewDelegate {
         cell.cellReverseBtn.backgroundColor = hexStringToUIColor(hex: ColorsData().colors2[indexPath.row])
         cell.cellFooterView.backgroundColor = hexStringToUIColor(hex: ColorsData().colors2[indexPath.row])
         cell.cellSecondColor.backgroundColor = hexStringToUIColor(hex: ColorsData().colors2[indexPath.row])
+        cell.cellFirstColor.layer.borderColor = hexStringToUIColor(hex: ColorsData().colors2[indexPath.row]).cgColor
         
         return cell
     }
