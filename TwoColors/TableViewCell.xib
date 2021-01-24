@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -51,14 +52,14 @@
                         <rect key="frame" x="0.0" y="236" width="456" height="84"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LTR-qT-XPa">
-                                <rect key="frame" x="20" y="15" width="296" height="54"/>
+                                <rect key="frame" x="20" y="15" width="296" height="44"/>
                                 <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0078431372549019607" green="0.20392156862745098" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="NAt-Mk-zWZ">
-                                <rect key="frame" x="336" y="27" width="100" height="30"/>
+                                <rect key="frame" x="336" y="22" width="100" height="30"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yQJ-Zd-A5S">
                                         <rect key="frame" x="0.0" y="10" width="10" height="10"/>
@@ -98,12 +99,22 @@
                                     <constraint firstAttribute="width" constant="100" id="ZUv-al-y7m"/>
                                 </constraints>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dc2-4L-K9M">
+                                <rect key="frame" x="0.0" y="74" width="456" height="10"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="sM9-Z6-iIX"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.94117647058823528" green="0.92941176470588238" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Dc2-4L-K9M" secondAttribute="trailing" id="Bs9-cb-aD5"/>
                             <constraint firstItem="NAt-Mk-zWZ" firstAttribute="leading" secondItem="LTR-qT-XPa" secondAttribute="trailing" constant="20" id="Lw8-lB-IQ8"/>
-                            <constraint firstItem="NAt-Mk-zWZ" firstAttribute="centerY" secondItem="4j9-XD-gdv" secondAttribute="centerY" id="XCc-LL-wEB"/>
-                            <constraint firstAttribute="bottom" secondItem="LTR-qT-XPa" secondAttribute="bottom" constant="15" id="cCY-1h-QCx"/>
+                            <constraint firstItem="NAt-Mk-zWZ" firstAttribute="centerY" secondItem="LTR-qT-XPa" secondAttribute="centerY" id="XCc-LL-wEB"/>
+                            <constraint firstItem="Dc2-4L-K9M" firstAttribute="leading" secondItem="4j9-XD-gdv" secondAttribute="leading" id="brl-0C-PyE"/>
+                            <constraint firstItem="Dc2-4L-K9M" firstAttribute="top" secondItem="LTR-qT-XPa" secondAttribute="bottom" constant="15" id="cCY-1h-QCx"/>
+                            <constraint firstAttribute="bottom" secondItem="Dc2-4L-K9M" secondAttribute="bottom" id="hRG-PQ-00X"/>
                             <constraint firstAttribute="trailing" secondItem="NAt-Mk-zWZ" secondAttribute="trailing" constant="20" id="qeN-dH-p8t"/>
                             <constraint firstItem="LTR-qT-XPa" firstAttribute="top" secondItem="4j9-XD-gdv" secondAttribute="top" constant="15" id="tcZ-fd-VCM"/>
                             <constraint firstItem="LTR-qT-XPa" firstAttribute="leading" secondItem="4j9-XD-gdv" secondAttribute="leading" constant="20" symbolic="YES" id="tgk-Gx-cCA"/>
@@ -139,6 +150,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="cellContent" destination="hjm-ot-U5K" id="Jfa-fv-dJL"/>
+                <outlet property="cellFirstColor" destination="yQJ-Zd-A5S" id="aOW-7Z-2D1"/>
                 <outlet property="cellFirstCopyBtn" destination="7RU-cH-T2t" id="zlo-ZL-sUL"/>
                 <outlet property="cellFooterContent" destination="LTR-qT-XPa" id="rjA-90-h1X"/>
                 <outlet property="cellFooterView" destination="4j9-XD-gdv" id="Yal-4c-9Wr"/>
@@ -148,11 +160,14 @@
                 <outlet property="cellSecondBtn" destination="yne-qA-K96" id="92H-Lb-PGE"/>
                 <outlet property="cellSecondColor" destination="Q4L-DP-YZ2" id="L2v-nY-XP8"/>
             </connections>
-            <point key="canvasLocation" x="-81.159420289855078" y="75"/>
+            <point key="canvasLocation" x="-81.159420289855078" y="73.660714285714278"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="copy" width="477.86700439453125" height="477.86700439453125"/>
         <image name="reverse" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
