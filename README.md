@@ -2,8 +2,7 @@
 
 어울리는 두 색을 추천해주는 어플입니다.
 
-<img width="367" alt="스크린샷 2021-01-24 오후 9 59 13" src="https://user-images.githubusercontent.com/55382624/105631053-cb5aec80-5e8f-11eb-9308-6ac85334fc6e.png"  >
-![IMG_0164](https://user-images.githubusercontent.com/55382624/105631394-a23b5b80-5e91-11eb-9003-b73c1ad4eff3.PNG)
+<img width="367" alt="스크린샷 2021-01-24 오후 9 59 13" src="https://user-images.githubusercontent.com/55382624/105631053-cb5aec80-5e8f-11eb-9308-6ac85334fc6e.png"  >   ![IMG_0164](https://user-images.githubusercontent.com/55382624/105631693-0a3e7180-5e93-11eb-95f7-394c546c0459.PNG)
 
 
 
