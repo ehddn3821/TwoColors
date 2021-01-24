@@ -66,7 +66,7 @@ class TableViewCell: UITableViewCell {
         
         UIPasteboard.general.string = ColorsData().colors1[getIndexPath()]
         
-        makeToast("클립보드에 복사 되었습니다.", duration: 1.0, position: .center)
+        makeToast("\(ColorsData().colors1[getIndexPath()]) 복사 완료", duration: 1.0, position: .center)
     }
 
     // 두번째 복사 버튼 클릭
@@ -74,7 +74,7 @@ class TableViewCell: UITableViewCell {
 
         UIPasteboard.general.string = ColorsData().colors2[getIndexPath()]
         
-        makeToast("클립보드에 복사 되었습니다.", duration: 1.0, position: .center)
+        makeToast("\(ColorsData().colors2[getIndexPath()]) 복사 완료", duration: 1.0, position: .center)
     }
     
     // 자신의 indexPath.row 가져오기
