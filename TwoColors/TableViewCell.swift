@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Toast
 
 class TableViewCell: UITableViewCell {
 
@@ -32,6 +33,7 @@ class TableViewCell: UITableViewCell {
         cellSecondColor.layer.borderWidth = 1.5
     }
     
+    // 리버스 버튼 클릭
     @IBAction func reverseBtnClicked(_ sender: UIButton) {
         
         if cellHeadline.textColor == cellSecondColor.backgroundColor {
@@ -57,5 +59,31 @@ class TableViewCell: UITableViewCell {
             cellFooterContent.textColor = cellFirstColor.backgroundColor
             
         }
+    }
+    
+    // 첫번째 복사 버튼 클릭
+    @IBAction func firstCopyBtnClicked(_ sender: UIButton) {
+        
+        UIPasteboard.general.string = ColorsData().colors1[getIndexPath()]
+        
+        makeToast("클립보드에 복사 되었습니다.", duration: 1.0, position: .center)
+    }
+
+    // 두번째 복사 버튼 클릭
+    @IBAction func secondCopyBtnClicked(_ sender: UIButton) {
+
+        UIPasteboard.general.string = ColorsData().colors2[getIndexPath()]
+        
+        makeToast("클립보드에 복사 되었습니다.", duration: 1.0, position: .center)
+    }
+    
+    // 자신의 indexPath.row 가져오기
+    func getIndexPath() -> Int {
+        guard let superView = self.superview as? UITableView else {
+            print("superview is not a UITableView - getIndexPath")
+            return 0
+        }
+        let indexPath = superView.indexPath(for: self)
+        return indexPath!.row
     }
 }

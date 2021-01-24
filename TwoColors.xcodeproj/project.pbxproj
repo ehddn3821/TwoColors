@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3522F27225BD964200C202DF /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 3522F27125BD964200C202DF /* Toast */; };
 		3542FF3125BD525B0036FDBE /* ColorsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3542FF3025BD525B0036FDBE /* ColorsData.swift */; };
 		356C1F1725B855AF003D5A1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356C1F1625B855AF003D5A1B /* AppDelegate.swift */; };
 		356C1F1925B855AF003D5A1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356C1F1825B855AF003D5A1B /* SceneDelegate.swift */; };
@@ -37,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3522F27225BD964200C202DF /* Toast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +94,9 @@
 			dependencies = (
 			);
 			name = TwoColors;
+			packageProductDependencies = (
+				3522F27125BD964200C202DF /* Toast */,
+			);
 			productName = TwoColor;
 			productReference = 356C1F1325B855AF003D5A1B /* TwoColors.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +124,9 @@
 				Base,
 			);
 			mainGroup = 356C1F0A25B855AF003D5A1B;
+			packageReferences = (
+				3522F27025BD964200C202DF /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+			);
 			productRefGroup = 356C1F1425B855AF003D5A1B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -355,6 +363,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3522F27025BD964200C202DF /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3522F27125BD964200C202DF /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3522F27025BD964200C202DF /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 356C1F0B25B855AF003D5A1B /* Project object */;
 }

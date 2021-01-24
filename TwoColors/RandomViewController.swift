@@ -81,4 +81,6 @@ extension RandomViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return CGFloat.leastNormalMagnitude // 이게 CGFloat 양수 최소값 상수
     }
+    
+    
 }
